@@ -7,6 +7,9 @@ export default defineConfig({
     build: {
         outDir: "build",
         assetsDir: "assets",
-        publicDir: "/"
+        publicDir: "/",
+        rollupOptions: {
+            external: ["react-dom/client"]
+        }
     }
 })
